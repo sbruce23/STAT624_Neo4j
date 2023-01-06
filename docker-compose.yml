@@ -4,11 +4,6 @@ services:
       container_name: neo4j_container
       image: neo4j:5.3.0
       restart: always
-      volumes:
-        - ./conf:/conf
-        - ./data:/data
-        - ./import:/import
-        - ./plugins:/plugins
       ports:
         - "7473:7473"
         - "7474:7474"
